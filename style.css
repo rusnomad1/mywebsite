@@ -1,0 +1,389 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;  
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  color: #2A3D8F;
+  font-size: 36px;
+  line-height: 49px;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 41px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.page-header {
+  margin-top: 10px;  
+  display: flex;
+  /* justify-content: flex-start; */
+}
+.main-menu{
+  /*занимаем оставшееся место в блоке*/
+  flex-grow: 1;
+}
+.main-menu-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-menu-list a {
+  font-size: 30px;
+  line-height: 41px;
+  color: #2A3D8F;
+}
+
+.main-menu-list a:hover {
+  color: #3893cc;
+}
+
+.slogan {
+  height: 558px;
+  background-image: url(img/innsbruck1.png);
+  background-color: #dbe8f7;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slogan h1 {
+  margin: 0;
+  padding-top: 240px;
+  font-size: 60px;
+  line-height: 82px;
+  color: #FFFFFF;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-numbers-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 20px;
+}
+
+.about-numbers-list li::before {
+  content: "✓";
+  /* отступ между галочкой и текстом */
+  margin-right: 3px;
+}
+
+.marketing {
+  display: flex;
+  flex-direction: column;
+  background-image: url(img/skier.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  width: 30%;
+}
+
+.marketing p {
+  margin: 0;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 2vw; 
+  line-height: 33px;
+}
+
+.marketing a {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 60px;
+  padding: 5px 10px;
+  background-color: #fff;
+  opacity: 0.7; 
+  /* эгоистическое выравнивание элемента вдоль поперечной оси */
+  align-self: flex-end;
+  color: #000000;
+}
+
+.about-wether-graph {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.about-wether-graph figcaption {
+  font-size: 22px;
+  line-height: 33px;
+  background-color: rgb(124, 124, 124);
+  color: #fff;	
+  padding: 5px;
+  text-align: center;
+}
+
+.gallery-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-direction: column;
+}
+
+.gallery-item {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  flex-direction: row;
+  align-items: center;
+  min-height: 256px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #B5D4C5;
+}
+
+.gallery-item h3 {
+  text-transform: uppercase;
+  padding-top: 45px;  
+  padding-left: 59px;
+  padding-right: 59px;
+  padding-bottom: 60px;
+  width: 400px;
+}
+
+.transfer {
+  border-collapse: collapse;
+  margin:0 auto;
+  margin-bottom: 20px;
+}
+
+.transfer thead {
+  background-color: rgb(32, 46, 92);
+  color: #fff;
+}
+.transfer span{
+  display: none;
+}
+.transfer td,th {
+  border: 1px solid #333;
+  padding: 5px;
+  text-align: center;
+}
+
+/* homework_3 */
+/* .transfer td:first-child {
+  text-align: left;
+}
+
+.transfer tr:nth-child(odd) {
+  background-color: rgba(62, 64, 71, 0.322);
+}
+
+.transfer tr:nth-child(even) {
+  background-color: rgba(2, 139, 252, 0.322);
+}
+*/
+
+.footer-wrapper {
+  background-color: #B5D4C5;  
+} 
+
+.page-footer {
+  display: flex;  
+  /* Равномерно распределяет все элементы по ширине flex-блока.
+  Все элементы имеют равное пространство вокруг */
+  justify-content: space-evenly;  
+  padding: 35px 0;
+  color: #000000;
+}
+
+ .hashtag {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+} 
+
+ .footer-social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+} 
+
+.social-button {
+  margin: 0px 10px;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0;  
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+/* homework_4 */
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+
+  /*.main-menu-list li {
+    width: 200px;
+  }*/
+
+  .main-menu-list a {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .slogan h1 {
+    font-size: 40px;
+    line-height: 62px;
+  }
+
+  .gallery-item {
+    flex-direction: column;
+  }
+
+  .gallery-item:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .gallery-item h3 {
+    width: auto;
+  }
+
+  .gallery-item img {
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .page-header img {
+    width: 55px;
+    margin-bottom: 5px;
+  }
+
+  .main-menu {
+    width: 100%;
+  }
+
+  .main-menu-list {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-menu-list li {    
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+  }
+
+  .main-menu-list a {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 18px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .marketing {
+    width: 100%;
+  }
+
+  .marketing p {
+    font-size: 3vw;
+  }
+
+  .about-wether-graph figcaption {
+    font-size: 12px;
+    line-height: 23px;
+  }
+  .transfer{
+    margin:0;
+    width: 100%;
+  }
+  /*таблица в столбик*/
+  .transfer thead {
+    display: none;
+  }
+
+  .transfer tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .transfer td {
+    position: relative;
+    margin: 0 -1px -1px 0;
+    padding-top: 35px;
+    width: 45%;
+  }
+
+  .transfer span {
+    display: block;
+    width: 100%;
+    background-color: rgba(0, 38, 163, 0.336);
+    color: dimgray;  
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 0;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+  }
+
+
+  .page-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-social {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
